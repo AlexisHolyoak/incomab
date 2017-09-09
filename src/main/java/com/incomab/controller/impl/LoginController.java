@@ -4,6 +4,7 @@
 package com.incomab.controller.impl;
 
 
+import com.incomab.util.AudioUtil;
 import com.incomab.util.EmailUtil;
 import com.incomab.util.EthernetUtil;
 import com.incomab.util.FxmlUtil;
@@ -140,16 +141,11 @@ private final double IMG_WIDTH = 900;
     //to close the login screen
     @FXML
     private void handleClose(MouseEvent event) {
-        //System.exit(0);             
-        fxml.ShowPushNotification("Mensaje", "Notificaciasdasdasasdsaon",1,Pos.BOTTOM_LEFT);
-        fxml.ShowPushNotification("Mensaje", "Notificaciasdasdasasdsaon",2,Pos.TOP_CENTER);
-        fxml.ShowPushNotification("Mensaje", "Notificaciasdasdasasdsaon",3,Pos.BOTTOM_CENTER);
-        fxml.ShowPushNotification("Mensaje", "Notificaciasdasdasasdsaon",4,Pos.TOP_RIGHT);
-        
+        System.exit(0);                                       
     }
     //to minimize the login screen
     @FXML
-    private void handleMinimize(MouseEvent event) {
+    private void handleMinimize(MouseEvent event) {       
         Stage stage = (Stage)((MaterialDesignIconView)event.getSource()).getScene().getWindow();
         // is stage minimizable into task bar. (true | false)
         stage.setIconified(true);

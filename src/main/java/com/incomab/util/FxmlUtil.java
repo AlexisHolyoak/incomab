@@ -30,7 +30,7 @@ import org.controlsfx.control.Notifications;
  *
  * @author peral
  */
-public class FxmlUtil {
+public class FxmlUtil {    
       public void OpenNewScene(String resource,boolean border,boolean maximized){
          try {
                 FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(resource));
@@ -104,6 +104,7 @@ public class FxmlUtil {
     Fill title and txt when showing information, so type must be 4
     Return: One push notification on screen*/
     public void ShowPushNotification(String title,String txt,int type,Pos pos){
+       
         Image insert=new Image(getClass().getResourceAsStream("/images/insert.png"));
         Image update=new Image("/images/update.png");
         Image delete=new Image("/images/delete.png");
@@ -149,5 +150,6 @@ public class FxmlUtil {
                 break;
         }
         notifications.show();
+         AudioUtil.playSound("job-done.wav");
         }    
 }

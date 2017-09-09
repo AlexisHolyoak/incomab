@@ -6,12 +6,14 @@ com\incomab\model\TEntidad.class
 com\incomab\model\TUsuario.class
 com\incomab\model\TComprobante.class
 com\incomab\model\TPrincipal.class
+com\incomab\util\AudioUtil$1.class
 com\incomab\model\TSerie.class
 com\incomab\util\MensajesUtil.class
 com\incomab\model\TBoleta.class
 com\incomab\model\TCuentas.class
 com\incomab\model\TIgv.class
 com\incomab\model\TProducto.class
+com\incomab\util\AudioUtil.class
 com\incomab\util\EmailUtil.class
 com\incomab\util\FxmlUtil$1.class
 com\incomab\model\TVenta.class

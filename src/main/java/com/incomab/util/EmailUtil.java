@@ -55,5 +55,5 @@ public class EmailUtil {
         } catch (Exception e) {
             System.out.println(e.getCause());
         }
-    }
+    } 
 }
