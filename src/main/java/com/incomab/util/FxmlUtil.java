@@ -92,7 +92,8 @@ public class FxmlUtil {
         }
         Optional<ButtonType> result=alert.showAndWait();
         if(result.get()==buttonSendFail){
-            //TODO:handle send issue to github
+            EmailUtil correo=new EmailUtil();
+            correo.SendEmail("peraltaholyoak.aj@gmail.com", exception, title, "", "");
         }
     }
     /*Method Created By: Alexis Peralta Holyoak
