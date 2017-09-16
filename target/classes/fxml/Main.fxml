@@ -1,14 +1,232 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.net.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDrawer?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.incomab.controller.impl.MainController">
-    <stylesheets>
-        <URL value="@/styles/main.css"/>
-    </stylesheets>
-</AnchorPane>
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
+   <center>
+      <BorderPane focusTraversable="true" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: F1F1F1;" BorderPane.alignment="CENTER">
+         <center>
+            <ScrollPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+         </center>
+         <top>
+            <VBox prefHeight="75.0" prefWidth="380.0">
+               <children>
+                  <HBox alignment="TOP_RIGHT" nodeOrientation="LEFT_TO_RIGHT" prefHeight="46.0" prefWidth="380.0" style="-fx-background-color: ;">
+                     <children>
+                        <FontAwesomeIconView fill="RED" glyphName="MINUS" size="15" styleClass="ScaleEffect">
+                           <HBox.margin>
+                              <Insets right="10.0" top="10.0" />
+                           </HBox.margin>
+                        </FontAwesomeIconView>
+                        <FontAwesomeIconView fill="RED" glyphName="SQUARE_ALT" size="15" styleClass="ScaleEffect">
+                           <HBox.margin>
+                              <Insets right="10.0" top="10.0" />
+                           </HBox.margin>
+                        </FontAwesomeIconView>
+                        <FontAwesomeIconView fill="RED" glyphName="CLOSE" size="15" styleClass="ScaleEffect">
+                           <HBox.margin>
+                              <Insets right="10.0" top="10.0" />
+                           </HBox.margin>
+                        </FontAwesomeIconView>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER_RIGHT" prefHeight="48.0" prefWidth="380.0" style="-fx-background-color: #BCE89D;">
+                     <children>
+                        <JFXComboBox prefHeight="31.0" prefWidth="128.0" promptText="Local">
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </JFXComboBox>
+                        <Label styleClass="ScaleEffect" text="Estadisticas">
+                           <graphic>
+                              <FontAwesomeIconView glyphName="LINE_CHART" size="25" />
+                           </graphic>
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </Label>
+                        <FontAwesomeIconView glyphName="GAVEL" size="25" styleClass="ScaleEffect">
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </FontAwesomeIconView>
+                        <FontAwesomeIconView glyphName="BELL_ALT" size="25" styleClass="ScaleEffect">
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </FontAwesomeIconView>
+                        <FontAwesomeIconView glyphName="LIST_UL" size="25" styleClass="ScaleEffect">
+                           <HBox.margin>
+                              <Insets right="15.0" />
+                           </HBox.margin>
+                        </FontAwesomeIconView>
+                     </children>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                     <padding>
+                        <Insets left="10.0" right="10.0" />
+                     </padding>
+                  </HBox>
+               </children>
+            </VBox>
+         </top></BorderPane>
+   </center>
+   <left>       
+      <VBox focusTraversable="true" prefHeight="400.0" prefWidth="220.0" style="-fx-background-color: #00A388;" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane prefHeight="73.0" prefWidth="220.0" style="-fx-background-color: #79BD8F;" />
+            <Separator prefWidth="200.0" />
+            <Accordion>
+              <panes>
+                <TitledPane alignment="BASELINE_LEFT" contentDisplay="CENTER" text="ALEXIS HOLYOAK" textFill="WHITE">
+                     <content>
+                        <JFXDrawer>
+                           <children>
+                              <VBox prefHeight="0.0" prefWidth="188.0">
+                                 <children>
+                                    <JFXButton alignment="BOTTOM_LEFT" graphicTextGap="15.0" prefHeight="31.0" prefWidth="269.0" styleClass="hoverContentButton" text="Mi Perfil" textFill="WHITE">
+                                       <graphic>
+                                          <FontAwesomeIconView fill="WHITE" glyphName="USER" size="20" />
+                                       </graphic></JFXButton>
+                                    <JFXButton alignment="BOTTOM_LEFT" graphicTextGap="15.0" prefHeight="31.0" prefWidth="256.0" styleClass="hoverContentButton" text="Editar Perfil" textFill="WHITE">
+                                       <graphic>
+                                          <FontAwesomeIconView fill="WHITE" glyphName="PENCIL_SQUARE" size="20" />
+                                       </graphic></JFXButton>
+                                    <JFXButton alignment="BOTTOM_LEFT" graphicTextGap="15.0" prefHeight="31.0" prefWidth="260.0" styleClass="hoverContentButton" text="Configuraciones" textFill="WHITE">
+                                       <graphic>
+                                          <FontAwesomeIconView fill="WHITE" glyphName="WRENCH" size="20" />
+                                       </graphic></JFXButton>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </JFXDrawer>
+                     </content>
+                </TitledPane>
+              </panes>
+            </Accordion>
+            <Separator prefWidth="200.0" />
+            <Accordion focusTraversable="false" pickOnBounds="false" prefHeight="156.0" prefWidth="46.0" style="-fx-background-color: ;">
+              <panes>
+                <TitledPane alignment="BASELINE_LEFT" graphicTextGap="5.0" pickOnBounds="false" prefHeight="94.0" prefWidth="101.0" text="COMPROBANTES" textFill="WHITE">
+                     <content>
+                        <JFXDrawer>
+                           <children>
+                              <VBox prefHeight="200.0" prefWidth="100.0">
+                                 <children>
+                                    <JFXButton alignment="BOTTOM_LEFT" graphicTextGap="15.0" prefHeight="31.0" prefWidth="237.0" styleClass="hoverContentButton" text="FACTURA" textFill="WHITE" wrapText="true">
+                                       <graphic>
+                                          <FontAwesomeIconView fill="WHITE" glyphName="FILE" size="15" />
+                                       </graphic></JFXButton>
+                                    <JFXButton alignment="BOTTOM_LEFT" graphicTextGap="15.0" prefHeight="31.0" prefWidth="237.0" styleClass="hoverContentButton" text="BOLETA" textFill="WHITE" wrapText="true">
+                                       <graphic>
+                                          <FontAwesomeIconView fill="WHITE" glyphName="STICKY_NOTE" size="15" />
+                                       </graphic>
+                                    </JFXButton>
+                                    <JFXButton alignment="BOTTOM_LEFT" graphicTextGap="15.0" prefHeight="31.0" prefWidth="310.0" styleClass="hoverContentButton" text="NOTA DE CREDITO" textFill="WHITE" wrapText="true">
+                                       <graphic>
+                                          <FontAwesomeIconView fill="WHITE" glyphName="CREDIT_CARD" size="15" />
+                                       </graphic></JFXButton>
+                                    <JFXButton alignment="BOTTOM_LEFT" graphicTextGap="15.0" prefHeight="31.0" prefWidth="313.0" styleClass="hoverContentButton" text="NOTA DE DEBITO" textFill="WHITE" wrapText="true">
+                                       <graphic>
+                                          <FontAwesomeIconView fill="WHITE" glyphName="CC" size="15" />
+                                       </graphic></JFXButton>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </JFXDrawer>
+                     </content>
+                </TitledPane>
+                <TitledPane alignment="BASELINE_LEFT" prefHeight="64.0" prefWidth="169.0" text="ENTIDADES" textFill="WHITE">
+                     <content>
+                        <JFXDrawer>
+                           <children>
+                              <VBox prefHeight="200.0" prefWidth="100.0">
+                                 <children>
+                                    <JFXButton alignment="BOTTOM_LEFT" graphicTextGap="15.0" prefHeight="31.0" prefWidth="269.0" styleClass="hoverContentButton" text="Mostrar" textFill="WHITE">
+                                       <graphic>
+                                          <FontAwesomeIconView fill="WHITE" glyphName="USERS" size="20" />
+                                       </graphic>
+                                    </JFXButton>
+                                    <JFXButton alignment="BOTTOM_LEFT" graphicTextGap="15.0" prefHeight="31.0" prefWidth="269.0" styleClass="hoverContentButton" text="Agregar" textFill="WHITE">
+                                       <graphic>
+                                          <FontAwesomeIconView fill="WHITE" glyphName="USER_PLUS" size="20" />
+                                       </graphic>
+                                    </JFXButton>
+                                    <JFXButton alignment="BOTTOM_LEFT" graphicTextGap="15.0" prefHeight="31.0" prefWidth="269.0" styleClass="hoverContentButton" text="Subir desde Excel" textFill="WHITE">
+                                       <graphic>
+                                          <FontAwesomeIconView fill="WHITE" glyphName="UPLOAD" size="20" />
+                                       </graphic>
+                                    </JFXButton>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </JFXDrawer>
+                     </content></TitledPane>
+                <TitledPane alignment="BASELINE_LEFT" prefHeight="82.0" prefWidth="169.0" text="PRODUCTOS" textFill="WHITE">
+                     <content>
+                        <JFXDrawer>
+                           <children>
+                              <VBox prefHeight="200.0" prefWidth="100.0">
+                                 <children>
+                                    <JFXButton alignment="BOTTOM_LEFT" graphicTextGap="15.0" prefHeight="31.0" prefWidth="269.0" styleClass="hoverContentButton" text="Mostrar" textFill="WHITE">
+                                       <graphic>
+                                          <FontAwesomeIconView fill="WHITE" glyphName="EYE" size="20" />
+                                       </graphic>
+                                    </JFXButton>
+                                    <JFXButton alignment="BOTTOM_LEFT" graphicTextGap="15.0" prefHeight="31.0" prefWidth="269.0" styleClass="hoverContentButton" text="Agregar" textFill="WHITE">
+                                       <graphic>
+                                          <FontAwesomeIconView fill="WHITE" glyphName="MEDKIT" size="20" />
+                                       </graphic>
+                                    </JFXButton>
+                                    <JFXButton alignment="BOTTOM_LEFT" graphicTextGap="15.0" prefHeight="31.0" prefWidth="269.0" styleClass="hoverContentButton" text="Subir desde Excel" textFill="WHITE">
+                                       <graphic>
+                                          <FontAwesomeIconView fill="WHITE" glyphName="UPLOAD" size="20" />
+                                       </graphic>
+                                    </JFXButton>
+                                    <JFXButton alignment="BOTTOM_LEFT" graphicTextGap="15.0" prefHeight="31.0" prefWidth="269.0" styleClass="hoverContentButton" text="Unidades de medida" textFill="WHITE">
+                                       <graphic>
+                                          <FontAwesomeIconView fill="WHITE" glyphName="BALANCE_SCALE" size="20" />
+                                       </graphic>
+                                    </JFXButton>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </JFXDrawer>
+                     </content></TitledPane>
+                  <TitledPane alignment="BASELINE_LEFT" prefHeight="200.0" prefWidth="200.0" text="COMPRAS" textFill="WHITE">
+                     <content>
+                        <JFXDrawer>
+                           <children>
+                              <VBox prefHeight="200.0" prefWidth="100.0" />
+                           </children>
+                        </JFXDrawer>
+                     </content>
+                  </TitledPane>
+              </panes>
+               <effect>
+                  <Glow />
+               </effect>
+            </Accordion>
+         </children>
+      </VBox>
+     
+   </left>
+</BorderPane>

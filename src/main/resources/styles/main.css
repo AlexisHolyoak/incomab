@@ -5,3 +5,37 @@
 .mainFxmlClass {
 
 }
+.accordion .titled-pane > *.content{
+    -fx-background-color: transparent ;
+    -fx-border-color: transparent;
+  
+}
+.accordion .titled-pane .title {
+    -fx-background-color: transparent ;
+}
+.accordion .title > .arrow-button .arrow{
+    -fx-translate-x: 170;       
+     -fx-background-color: white ;
+     -fx-border-color: transparent;
+}
+.titled-pane > .title {
+    -fx-pref-height: 50.0;
+}
+.accordion .titled-pane .title:hover  {
+    -fx-background-color: #FF6138 ;
+}
+.accordion .titled-pane .title:focused {
+    -fx-background-color: #FF6138;
+}
+.hoverContentButton:hover{
+    -fx-background-color: #424242 ;
+}
+.ScaleEffect:hover{
+    -fx-background-color: transparent;
+    -fx-scale-y: 1.1;
+}
+.ScaleEffect:pressed{
+    -fx-scale-y: 0.9;
+    -fx-scale-x: 0.9;
+     -fx-background-color:transparent;
+}
